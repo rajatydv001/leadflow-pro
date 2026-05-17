@@ -3,16 +3,32 @@
   "builds": [
     {
       "src": "api/index.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3"
+      }
+    },
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "templates/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "api/index.py"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "static/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "api/index.py"
     }
-  ],
-  "env": {
-    "PYTHONPATH": "/var/task"
-  }
+  ]
 }
