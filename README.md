@@ -186,3 +186,6 @@ simplifiq_assessment/
 - Verify credentials.json exists and is valid
 - Check API is enabled in Google Cloud Console
 - Ensure proper permissions on shared resources
+
+###Support
+- If you like this project, give it a ⭐ on GitHub!
