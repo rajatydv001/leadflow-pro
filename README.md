@@ -187,5 +187,5 @@ simplifiq_assessment/
 - Check API is enabled in Google Cloud Console
 - Ensure proper permissions on shared resources
 
-##Support
+## Support
 - If you like this project, give it a ⭐ on GitHub!
