@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadFlow Pro - Get Your Free Business Audit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-text">LeadFlow</span><span class="logo-accent">Pro</span>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#form-section">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Instant Business Insights, Personalized for Your Company</h1>
+                <p class="hero-subtitle">Submit your company details and receive a comprehensive, personalized audit report with industry insights and actionable recommendations - automatically.</p>
+                <a href="#form-section" class="btn btn-primary">Get Your Free Report</a>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="#3B82F6"/>
+                            <path d="M14 24L22 32L34 16" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Company Enrichment</h3>
+                    <p>Automated data gathering from multiple sources</p>
+                </div>
+                <div class="visual-card">
+                    <div class="visual-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="#10B981"/>
+                            <path d="M14 16H34V32H14V16Z" stroke="white" stroke-width="2"/>
+                            <path d="M20 22H28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 26H26" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>PDF Report</h3>
+                    <p>Professional, branded audit document</p>
+                </div>
+                <div class="visual-card">
+                    <div class="visual-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="12" fill="#8B5CF6"/>
+                            <path d="M14 18L24 28L34 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 28V32C14 33.1046 14.8954 34 16 34H32C33.1046 34 34 33.1046 34 32V28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Email Delivery</h3>
+                    <p>Instant delivery to your inbox</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Complete automation from lead submission to report delivery</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Submit Your Details</h3>
+                    <p>Fill out our intake form with your company information and website. The more details you provide, the better your report.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>We Enrich Your Data</h3>
+                    <p>Our system automatically gathers company information from public sources, building a comprehensive profile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Receive Your Report</h3>
+                    <p>Within moments, receive a personalized PDF audit with industry insights, trends, and tailored recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section" class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Get Your Free Business Audit</h2>
+                    <p>Complete the form below and we'll deliver your personalized report via email</p>
+                </div>
+
+                <form id="leadForm" class="lead-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="John Smith" required>
+                            <span class="error-message" id="fullName-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email *</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="companyName">Company Name *</label>
+                            <input type="text" id="companyName" name="companyName" placeholder="Acme Corporation" required>
+                            <span class="error-message" id="companyName-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Company Website</label>
+                            <input type="text" id="website" name="website" placeholder="acme.com">
+                            <span class="error-message" id="website-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="industry">Industry *</label>
+                            <select id="industry" name="industry" required>
+                                <option value="">Select Industry</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="SaaS">SaaS</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="error-message" id="industry-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="companySize">Company Size *</label>
+                            <select id="companySize" name="companySize" required>
+                                <option value="">Select Size</option>
+                                <option value="1-10">1-10 employees</option>
+                                <option value="11-50">11-50 employees</option>
+                                <option value="51-200">51-200 employees</option>
+                                <option value="201-500">201-500 employees</option>
+                                <option value="500+">500+ employees</option>
+                            </select>
+                            <span class="error-message" id="companySize-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Tell us about any specific challenges or areas you'd like us to focus on..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                        <span class="btn-text">Generate My Report</span>
+                        <span class="btn-loading">Processing...</span>
+                    </button>
+                </form>
+
+                <div id="formMessage" class="form-message hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 LeadFlow Pro. Automated Business Intelligence.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
